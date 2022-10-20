@@ -1,0 +1,19 @@
+.bg-color {
+  background-color: gainsboro;
+}
+/* body bac. color */
+.input-body {
+  background-color: #dcdcdc;
+  width: 90%;
+  margin: 0 auto;
+}
+.input-saving {
+  border-radius: 5px;
+  width: 6rem;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  color: #aaa;
+  text-align: center;
+}

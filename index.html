@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Calculation</title>
+    <!-- css file add -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootsrap add link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center col-12 col-md-12 text-success mt-5 fs-1 fw-bold">
+        Money Calculation
+      </h1>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="row">
+          <!----------- 
+                  add  Imaige 
+                ----------->
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <img class="w-100" src="img/image1.jpg" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-5 bg-color rounded">
+            <div class="text-center text-md-start my-4">
+              <h4 class="text-center mb-4">Income</h4>
+              <div class="form-group row">
+                <!--------- 
+                        Income part
+                        --------->
+                <label for="income" class="col-sm-2 col-form-label fst-normal"
+                  >Income:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control input-body p-1"
+                    placeholder="৳0"
+                    id="income"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-md-start my-4">
+              <h4 class="text-center mb-4">Expenses</h4>
+              <div class="form-group row">
+                <!------------- 
+                            cost part 
+                        ---------------->
+                <label for="income" class="col-sm-2 col-form-label fst-normal"
+                  >Food:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control input-body p-1"
+                    id="food"
+                    placeholder="৳0"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="income" class="col-sm-2 col-form-label fst-normal"
+                  >Rent:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control input-body p-1"
+                    id="rent"
+                    placeholder="৳0"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-3">
+                <label for="income" class="col-sm-2 col-form-label"
+                  >Clothes:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control input-body p-1"
+                    id="clothes"
+                    placeholder="৳0"
+                  />
+                </div>
+              </div>
+            </div>
+            <!--------------- 
+                    calculate 
+                ----------------->
+            <div class="d-flex justify-content-center">
+              <button
+                id="cal-btn"
+                type="button"
+                class="btn btn-primary px-5 fw-bolder"
+              >
+                Calculate
+              </button>
+            </div>
+            <div class="my-4">
+              <!--------------- 
+                      Total Expenses
+                      ----------------->
+              <h4 class="text-center mb-4">
+                Total Expenses: <span id="totalExpenses">00</span>
+              </h4>
+            </div>
+            <div class="my-4">
+              <!--------------- 
+                          Balance
+                      ----------------->
+              <h4 class="text-center mb-4 text-">
+                Balance: <span id="balance">00</span>
+              </h4>
+            </div>
+            <div class="my-4">
+              <!--------------- 
+                        Save button
+                      ----------------->
+              <p class="text-center my-4">
+                Save:
+                <span class="m-2"
+                  ><input
+                    id="save"
+                    class="input-saving p-1 text-center"
+                    type="number"
+                /></span>
+                %
+                <button
+                  id="save-btn"
+                  class="btn btn-primary m-2 px-3 fw-bolder"
+                >
+                  Save
+                </button>
+              </p>
+            </div>
+            <div class="text-center my-4">
+              <!--------------- 
+                        Saving Amount
+                      ----------------->
+              <h4 class="text-center mb-4 text-">
+                Saving Amount:৳ <span id="savingAmount">00</span>
+              </h4>
+            </div>
+            <div class="text-center my-4">
+              <!--------------- 
+                    Remaining Balanc
+                      ----------------->
+              <h4 class="text-center mb-4">
+                Remaining Balance:৳ <span id="remaningAmount">00</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+      <p class="footer__copyright">
+        &copy; 2022, <strong>Money Calculation</strong> by Ummey Saleha Sumi.
+        All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
